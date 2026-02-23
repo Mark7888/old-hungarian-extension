@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #1a1a2e;
+  color: #e0e0e0;
+  min-width: 300px;
+  max-width: 360px;
+}
+
+.container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: #c8a96e;
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+}
+
+.section {
+  padding: 10px 0;
+}
+
+.section-label {
+  font-size: 13px;
+  color: #a0a0b0;
+  margin-bottom: 8px;
+}
+
+.section-label strong {
+  color: #c8a96e;
+}
+
+.btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  flex: 1;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-primary {
+  background: #c8a96e;
+  color: #1a1a2e;
+}
+
+.btn-primary:hover {
+  background: #d9bc88;
+}
+
+.btn-secondary {
+  background: #2e2e50;
+  color: #c8a96e;
+  border: 1px solid #c8a96e44;
+}
+
+.btn-secondary:hover {
+  background: #3a3a68;
+}
+
+.divider {
+  height: 1px;
+  background: #2e2e50;
+  margin: 4px 0;
+}
+
+.result-section {
+  padding-bottom: 4px;
+}
+
+.result-box {
+  min-height: 48px;
+  background: #0d0d1a;
+  border: 1px solid #2e2e50;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #e8e8ff;
+  word-break: break-word;
+  white-space: pre-wrap;
+  font-family: "Noto Sans Old Hungarian", "Segoe UI Historic", "Segoe UI", sans-serif;
+}
+
+.result-box:empty::before {
+  content: "Result will appear here…";
+  color: #444466;
+  font-style: italic;
+  font-size: 13px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.status {
+  font-size: 11px;
+  margin-top: 6px;
+  min-height: 16px;
+  color: #6fbf73;
+  text-align: right;
+}
+
+.status.error {
+  color: #f28b82;
+}

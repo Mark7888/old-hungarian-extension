@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Old Hungarian Translator</title>
+    <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">𐲥𐳉𐳓𐳁𐳗 Translator</h1>
+
+        <section class="section">
+            <p class="section-label">Translate <strong>from</strong> Old Hungarian:</p>
+            <div class="btn-group">
+                <button id="fromOH-clipboard" class="btn btn-primary">
+                    📋 To Clipboard
+                </button>
+                <button id="fromOH-text" class="btn btn-secondary">
+                    📝 To Text
+                </button>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="section">
+            <p class="section-label">Translate <strong>to</strong> Old Hungarian:</p>
+            <div class="btn-group">
+                <button id="toOH-clipboard" class="btn btn-primary">
+                    📋 To Clipboard
+                </button>
+                <button id="toOH-text" class="btn btn-secondary">
+                    📝 To Text
+                </button>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="section result-section">
+            <p class="section-label">Result:</p>
+            <div id="result" class="result-box" aria-live="polite"></div>
+            <p id="status" class="status" aria-live="polite"></p>
+        </section>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

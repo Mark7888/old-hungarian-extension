@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Old Hungarian Translator",
+  "version": "1.0.0",
+  "description": "Translate text to and from Old Hungarian (Székely rovásírás) script",
+  "permissions": [
+    "clipboardRead",
+    "clipboardWrite"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Old Hungarian Translator"
+  }
+}
